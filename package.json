@@ -1,0 +1,31 @@
+{
+  "name": "post-it5",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/.bin/bower install"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "grunt": "latest",
+    "baconjs": "latest",
+    "baconui": "latest",
+    "bower": "latest",
+    "browserify": "latest",
+    "coffeeify": "latest",
+    "jquery-browserify": "latest",
+    "grunt-browserify": "latest"
+  },
+  "devDependencies": {
+    "testem": "latest",
+    "express": "latest",
+    "socket.io": "latest",
+    "expect.js": "latest",
+    "sinon": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}
