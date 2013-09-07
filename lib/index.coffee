@@ -18,8 +18,13 @@ moved  = socketStream 'moved'
 
 createPostIt = (data) ->
   # このポストイット要素の支流、dataの変更も担う
-  branch = new Branch(data, moving, moved, edited)
+  branch = new Branch(data)
+    .add('moving', moving)
+    .add('moved', moved)
+    .add('edited', edited)
+
   { text, fill, trans } = data
+
   # ポストイットを生成
   new PostIt(draw, text, fill, trans)
     .subscribe(branch)       # 支流をsubscribe
